@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>· Login</title>
+    <title>STACKLY · Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
@@ -553,7 +553,7 @@
         <!-- Brand -->
         <div class="brand-header">
             <h1>Welcome Back</h1>
-            <p>Sign in to your Stackly account</p>
+            <p>Sign in to your STACKLY account</p>
         </div>
 
         <!-- Form Card -->
@@ -575,7 +575,7 @@
                     <label for="email">Email address <span class="required">*</span></label>
                     <div class="input-wrap">
                         <i class="ph ph-envelope"></i>
-                        <input type="email" id="email" placeholder="you@Stackly.com" required />
+                        <input type="email" id="email" placeholder="you@stackly.com" required />
                     </div>
                 </div>
 
@@ -636,7 +636,7 @@
 
             <!-- Footer -->
             <p class="form-footer">
-                New to Stackly? <a href="signup.html">Create account</a>
+                New to STACKLY? <a href="signup.html">Create account</a>
             </p>
 
         </div>
@@ -709,7 +709,7 @@
                 if (!role) return showError('Please select an account role');
 
                 // Save user
-                localStorage.setItem('ecopower_user', JSON.stringify({
+                localStorage.setItem('stackly_user', JSON.stringify({
                     email: email,
                     username: username,
                     role: role,
