@@ -410,7 +410,7 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   position: relative;
-  cursor: pointer;
+  cursor: default;
   box-shadow: var(--shadow-sm);
   transition: var(--tr);
 }
