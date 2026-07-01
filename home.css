@@ -1244,7 +1244,7 @@
     border-radius: 20px;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    cursor: pointer;
+    cursor: default;
 }
 
 .marquee-track img:hover {
