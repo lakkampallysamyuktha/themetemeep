@@ -228,6 +228,10 @@ ul {
     gap: 8px;
 }
 
+.btn i {
+    transform: translateY(2px);
+}
+
 .btn-primary {
     background-color: var(--primary-green);
     color: var(--white);
