@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy | The Future is Now</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Premium Oval Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo-removebg-preview.webp" alt="STACKLY" class="nav-logo-img" />
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <button class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="mobile-login-btn">Login</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- 1. Hero Banner -->
+        <section class="hero-section home-hero">
+            <div class="hero-bg">
+                <div class="hero-slide" style="background-image: url('images/wind.webp');"></div>
+                <div class="hero-slide" style="background-image: url('images/solar.webp');"></div>
+                <div class="hero-slide" style="background-image: url('images/Hydropower.webp');"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content" style="z-index: 2;">
+                <!-- Left: Hero Text -->
+                <div class="hero-text text-start">
+                    <h1 class="hero-title cinematic-title split-text" style="color: #ffffff;">PIONEERING<br>THE FUTURE OF<br>CLEAN ENERGY</h1>
+                    <p class="cinematic-subtitle fade-up" style="font-size: 18px; color: #ffffff !important; margin-top: 20px; max-width: 500px;">We deliver cutting-edge renewable solutions that transform infrastructure, reduce costs, and eliminate carbon emissions for a sustainable tomorrow.</p>
+                    <div class="hero-cta fade-up mt-4">
+                        <a href="services.html" class="btn btn-primary">Our Services</a>
+                        <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Right: Energy Orb Animation -->
+                <div class="hero-orb-container">
+                    <div class="hero-orb-ring hero-ring-1"></div>
+                    <div class="hero-orb-ring hero-ring-2"></div>
+                    <div class="hero-orb-ring hero-ring-3"></div>
+                    <div class="hero-core-orb">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <!-- Floating energy particles -->
+                    <div class="hero-particle hp-1"></div>
+                    <div class="hero-particle hp-2"></div>
+                    <div class="hero-particle hp-3"></div>
+                    <div class="hero-particle hp-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Green Text Marquee -->
+        <div class="text-marquee-section">
+            <div class="text-marquee-track">
+                <span>SOLAR ENERGY • WIND POWER • RENEWABLE ENERGY • CLEAN POWER • PHOTOVOLTAIC CELLS • SUSTAINABLE ENERGY • HYDROPOWER • SMART GRID • BATTERY STORAGE • </span>
+                <span>SOLAR ENERGY • WIND POWER • RENEWABLE ENERGY • CLEAN POWER • PHOTOVOLTAIC CELLS • SUSTAINABLE ENERGY • HYDROPOWER • SMART GRID • BATTERY STORAGE • </span>
+            </div>
+        </div>
+
+
+        <!-- 2. About Us Section -->
+        <section class="about-us-section" style="margin-top: 120px; padding-top: 60px; padding-bottom: 30px;">
+            <div class="container">
+                <div class="about-layout-premium">
+                    <!-- Left: Collage -->
+                    <div class="about-image-wrapper fade-right">
+                        <img src="images/marquee_story1.webp" alt="Renewable Energy" class="about-premium-img moving-img">
+                        <div class="experience-badge">
+                            <span class="exp-years">15+</span>
+                            <span class="exp-text">Years of<br>Excellence</span>
+                        </div>
+                        <div class="glass-info-card card-1"><i class="fa-solid fa-cloud"></i> CO₂ Saved</div>
+                        <div class="glass-info-card card-2"><i class="fa-solid fa-bolt"></i> Renewable Energy</div>
+                        <div class="glass-info-card card-3"><i class="fa-solid fa-leaf"></i> Green Future</div>
+                    </div>
+                    
+                    <!-- Right: Content -->
+                    <div class="about-content-premium fade-left">
+                        <div class="section-eyebrow">
+                            <i class="fa-solid fa-bolt"></i> ABOUT US
+                        </div>
+                        <h2 class="section-title">Powering a Sustainable Future</h2>
+                        <p class="section-desc">Beyond simply generating power, we are architects of a sustainable revolution, reimagining how humanity connects with the earth's natural rhythms.</p>
+                        
+                        <ul class="premium-bullets">
+                            <li><i class="fa-solid fa-check"></i> Renewable Energy Solutions</li>
+                            <li><i class="fa-solid fa-check"></i> Lower Carbon Emissions</li>
+                            <li><i class="fa-solid fa-check"></i> Smart Energy Technologies</li>
+                            <li><i class="fa-solid fa-check"></i> Sustainable Growth</li>
+                        </ul>
+
+                        <a href="404.html" class="btn btn-primary mt-4">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Animated Statistics Row -->
+                <div class="about-stats-row mt-5 fade-up">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card-premium">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-solar-panel"></i></div>
+                        <div class="stat-number-wrapper">
+                            <h3 class="counter" data-target="500">0</h3>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Projects Completed</p>
+                        <div class="stat-card-glow"></div>
+                    </div>
+                    
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card-premium">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="stat-number-wrapper">
+                            <h3 class="counter" data-target="25">0</h3>
+                            <span class="stat-suffix">MW+</span>
+                        </div>
+                        <p class="stat-label">Clean Energy</p>
+                        <div class="stat-card-glow"></div>
+                    </div>
+                    
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card-premium">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-face-smile"></i></div>
+                        <div class="stat-number-wrapper">
+                            <h3 class="counter" data-target="98">0</h3>
+                            <span class="stat-suffix">%</span>
+                        </div>
+                        <p class="stat-label">Client Satisfaction</p>
+                        <div class="stat-card-glow"></div>
+                    </div>
+                    
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card-premium">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-hourglass-start"></i></div>
+                        <div class="stat-number-wrapper">
+                            <h3 class="counter" data-target="15">0</h3>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Years Experience</p>
+                        <div class="stat-card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Services Section -->
+        <section class="services-carousel-section section-padding bg-light">
+            <div class="container">
+                <div class="services-header fade-up">
+                    <div class="services-header-left">
+                        <div class="section-eyebrow">
+                            <i class="fa-solid fa-bolt"></i> SERVICES
+                        </div>
+                        <h2 class="section-title">Renewable energy solutions<br>tailored to your needs</h2>
+                    </div>
+                    <div class="services-nav">
+                        <button class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="nav-btn next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="services-carousel-wrapper fade-up">
+                    <div class="services-carousel">
+                        
+                        <!-- Card 1 -->
+                        <div class="service-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-solid fa-solar-panel"></i>
+                                </div>
+                                <div class="card-number">01<span>.</span></div>
+                            </div>
+                            <h3 class="card-title">Solar Power Systems</h3>
+                            <div class="card-img-mask">
+                                <img src="images/solar.webp" alt="Solar Power Systems">
+                            </div>
+                            <p class="card-desc">Transforming pure sunlight into boundless potential with hyper-efficient photovoltaic arrays.</p>
+                            <a href="404.html" class="card-action-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="service-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-solid fa-fan"></i>
+                                </div>
+                                <div class="card-number">02<span>.</span></div>
+                            </div>
+                            <h3 class="card-title">Wind Energy</h3>
+                            <div class="card-img-mask">
+                                <img src="images/wind.webp" alt="Wind Energy">
+                            </div>
+                            <p class="card-desc">Capturing the invisible momentum of the skies with majestic, aerodynamically flawless turbines.</p>
+                            <a href="404.html" class="card-action-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="service-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-solid fa-water"></i>
+                                </div>
+                                <div class="card-number">03<span>.</span></div>
+                            </div>
+                            <h3 class="card-title">Hydropower Systems</h3>
+                            <div class="card-img-mask">
+                                <img src="images/Hydropower.webp" alt="Hydropower Systems">
+                            </div>
+                            <p class="card-desc">Channeling the relentless, surging energy of our waterways into an unbreakable current of clean power.</p>
+                            <a href="404.html" class="card-action-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="service-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <div class="card-number">04<span>.</span></div>
+                            </div>
+                            <h3 class="card-title">Biomass Energy</h3>
+                            <div class="card-img-mask">
+                                <img src="images/biomass.webp" alt="Biomass Energy">
+                            </div>
+                            <p class="card-desc">Breathing new life into organic matter, forging powerful biofuels through a perfect circle of zero-waste regeneration.</p>
+                            <a href="404.html" class="card-action-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="service-card">
+                            <div class="card-header">
+                                <div class="card-icon-wrapper">
+                                    <i class="fa-solid fa-charging-station"></i>
+                                </div>
+                                <div class="card-number">05<span>.</span></div>
+                            </div>
+                            <h3 class="card-title">Battery Storage</h3>
+                            <div class="card-img-mask">
+                                <img src="images/battery.webp" alt="Battery Storage">
+                            </div>
+                            <p class="card-desc">Intelligently storing the sun and wind. Our massive, cutting-edge reservoirs ensure your grid never sleeps.</p>
+                            <a href="404.html" class="card-action-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Divider Section -->
+        <section class="parallax-section">
+            <div class="parallax-bg"></div>
+            <div class="parallax-overlay"></div>
+            <div class="container relative text-start fade-up parallax-content-wrapper">
+                <h2 class="parallax-title cinematic-title">Powering a Sustainable Tomorrow</h2>
+                <p class="parallax-subtitle cinematic-subtitle mb-4">Step into the light. Together, we are accelerating the global shift towards an endlessly renewable, radically brilliant future.</p>
+                <a href="404.html" class="btn btn-primary mt-3 parallax-cta-btn">Get Started Today</a>
+            </div>
+        </section>
+
+        <!-- 4. Green Technologies -->
+        <section class="tech-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <div class="section-eyebrow justify-content-center mx-auto" style="display: inline-flex; margin-bottom: 15px;">
+                        <i class="fa-solid fa-bolt" style="color: var(--accent-orange);"></i> INNOVATION
+                    </div>
+                    <h2 class="section-title">Green Technologies</h2>
+                </div>
+
+                <div class="tech-showcase fade-up">
+                    <!-- Navigation Tabs -->
+                    <div class="tech-nav">
+                        <button class="tech-tab active" data-index="0">Solar Panel</button>
+                        <button class="tech-tab" data-index="1">Wind Turbine</button>
+                        <button class="tech-tab" data-index="2">Battery Storage</button>
+                        <button class="tech-tab" data-index="3">Smart Grid</button>
+                    </div>
+
+                    <div class="tech-showcase-inner" id="tech-showcase-inner">
+                        <!-- Left: Image -->
+                        <div class="tech-image-col">
+                            <div class="tech-img-wrapper">
+                                <img src="images/solar.webp" alt="Future Technology" id="tech-img" class="moving-img">
+                            </div>
+                        </div>
+                        <!-- Right: Content -->
+                        <div class="tech-content-col">
+                            <span class="tech-label" id="tech-label">Solar Panel Technology</span>
+                            <h3 id="tech-title">Next-Gen Photovoltaics</h3>
+                            <p id="tech-desc">Engineered like diamonds. Our next-generation monocrystalline cells pull power from the faintest rays of dawn, redefining the boundaries of solar capture.</p>
+                            <ul class="tech-benefits" id="tech-features">
+                                <li><i class="fa-solid fa-check"></i> <span>Anti-reflective coating</span></li>
+                                <li><i class="fa-solid fa-check"></i> <span>Extreme weather resistance</span></li>
+                                <li><i class="fa-solid fa-check"></i> <span>25-year performance warranty</span></li>
+                            </ul>
+                            <a href="404.html" class="btn btn-primary mt-4" id="tech-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. How We Work -->
+        <section class="how-we-work-section section-padding text-center">
+            <div class="container">
+                <div class="section-eyebrow justify-content-center mx-auto" style="display: inline-flex; margin-bottom: 15px;">
+                    <i class="fa-solid fa-bolt" style="color: var(--accent-orange);"></i> HOW IT WORKS
+                </div>
+                <h2 class="section-title mb-5">How we collaborate and<br>deliver excellence</h2>
+
+                <div class="work-process-grid">
+                    <!-- Step 1 -->
+                    <div class="work-process-col">
+                        <div class="work-process-card">
+                            <div class="process-badge-container">
+                                <div class="process-img-wrapper">
+                                    <img src="images/step_analysis.webp" alt="Site Analysis">
+                                </div>
+                                <span class="process-badge">Step 01</span>
+                            </div>
+                            <h3>Site Analysis</h3>
+                            <p>Comprehensive evaluation of topography and solar/wind resources to determine optimal energy potential.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="work-process-col has-divider">
+                        <div class="work-process-card">
+                            <div class="process-badge-container">
+                                <div class="process-img-wrapper">
+                                    <img src="images/step_engineering.webp" alt="Custom Engineering">
+                                </div>
+                                <span class="process-badge">Step 02</span>
+                            </div>
+                            <h3>Custom Engineering</h3>
+                            <p>Designing a tailored hybrid renewable system utilizing cutting-edge photovoltaics and wind technology.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="work-process-col has-divider">
+                        <div class="work-process-card">
+                            <div class="process-badge-container">
+                                <div class="process-img-wrapper">
+                                    <img src="images/solar.webp" alt="Implementation">
+                                </div>
+                                <span class="process-badge">Step 03</span>
+                            </div>
+                            <h3>Implementation</h3>
+                            <p>Precision installation by certified engineers, ensuring seamless integration with existing smart grids.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="work-process-col has-divider">
+                        <div class="work-process-card">
+                            <div class="process-badge-container">
+                                <div class="process-img-wrapper">
+                                    <img src="images/smart_grid.webp" alt="Optimization">
+                                </div>
+                                <span class="process-badge">Step 04</span>
+                            </div>
+                            <h3>Optimization</h3>
+                            <p>24/7 AI-driven monitoring and battery storage management to guarantee maximum efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Our Environmental Impact -->
+        <section class="premium-impact-section section-padding">
+            <div class="impact-overlay"></div>
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="text-center fade-up mb-5">
+                    <span class="cinematic-eyebrow">STATISTICS</span>
+                    <h2 class="cinematic-title">Our Environmental Impact</h2>
+                </div>
+
+                <div class="impact-grid mt-5">
+                    <!-- Card 1 -->
+                    <div class="impact-card fade-up">
+                        <div class="progress-circle" data-value="95">
+                            <svg>
+                                <circle cx="60" cy="60" r="54"></circle>
+                                <circle cx="60" cy="60" r="54" class="prog-fill"></circle>
+                            </svg>
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3><span class="counter" data-target="1250">0</span>+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="impact-card fade-up" style="transition-delay: 0.1s;">
+                        <div class="progress-circle" data-value="88">
+                            <svg>
+                                <circle cx="60" cy="60" r="54"></circle>
+                                <circle cx="60" cy="60" r="54" class="prog-fill"></circle>
+                            </svg>
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3><span class="counter" data-target="4.2">0</span>M Tons</h3>
+                        <p>CO₂ Reduced</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="impact-card fade-up" style="transition-delay: 0.2s;">
+                        <div class="progress-circle" data-value="92">
+                            <svg>
+                                <circle cx="60" cy="60" r="54"></circle>
+                                <circle cx="60" cy="60" r="54" class="prog-fill"></circle>
+                            </svg>
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3><span class="counter" data-target="15">0</span>M+</h3>
+                        <p>Trees Saved</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="impact-card fade-up" style="transition-delay: 0.3s;">
+                        <div class="progress-circle" data-value="78">
+                            <svg>
+                                <circle cx="60" cy="60" r="54"></circle>
+                                <circle cx="60" cy="60" r="54" class="prog-fill"></circle>
+                            </svg>
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3><span class="counter" data-target="8.5">0</span>GW</h3>
+                        <p>Energy Generated</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Success Stories -->
+        <section class="stories-section section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <div class="section-eyebrow justify-content-center mx-auto" style="display: inline-flex; margin-bottom: 15px;">
+                        <i class="fa-solid fa-bolt" style="color: var(--accent-orange);"></i> CASE STUDIES
+                    </div>
+                    <h2 class="section-title">Success Stories</h2>
+                </div>
+
+                <div class="marquee-wrapper">
+                    <div class="marquee-track">
+                        <!-- Group 1 -->
+                        <img src="images/marquee_story1.webp" alt="Project 1">
+                        <img src="images/marquee_story2.webp" alt="Project 2">
+                        <img src="images/wind_detail.webp" alt="Project 3">
+                        <img src="images/Hydropower.webp" alt="Project 4">
+                        <img src="images/solar.webp" alt="Project 5">
+                        
+                        <!-- Group 2 (Duplicate for seamless loop) -->
+                        <img src="images/marquee_story1.webp" alt="Project 1">
+                        <img src="images/marquee_story2.webp" alt="Project 2">
+                        <img src="images/wind_detail.webp" alt="Project 3">
+                        <img src="images/Hydropower.webp" alt="Project 4">
+                        <img src="images/solar.webp" alt="Project 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Latest Insights -->
+        <section class="insights-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-up">
+                    <div class="section-eyebrow justify-content-center mx-auto" style="display: inline-flex; margin-bottom: 15px;">
+                        <i class="fa-solid fa-bolt" style="color: var(--accent-orange);"></i> MAGAZINE
+                    </div>
+                    <h2 class="section-title">Latest Insights</h2>
+                </div>
+
+                <div class="magazine-layout">
+                    <div class="mag-featured fade-right">
+                        <img src="images/wind_detail.webp" alt="Article">
+                        <div class="mag-content">
+                            <div class="mag-meta">
+                                <span class="mag-tag">Innovation</span>
+                                <span class="mag-date">Oct 12, 2026</span>
+                            </div>
+                            <h3>The Next Leap in Photovoltaic Cell Efficiency is Here</h3>
+                            <a href="#" class="btn btn-white mt-2">Read Article</a>
+                        </div>
+                    </div>
+                    <div class="mag-sidebar fade-left">
+                        <div class="mag-card">
+                            <img src="images/grid_tech.webp" alt="Article">
+                            <div class="mag-card-content">
+                                <span class="mag-tag">Policy</span>
+                                <h4>Global Grid Initiatives Gain Momentum in EU</h4>
+                                <span class="mag-date">Oct 10, 2026</span>
+                            </div>
+                        </div>
+                        <div class="mag-card">
+                            <img src="images/battery_tech.webp" alt="Article">
+                            <div class="mag-card-content">
+                                <span class="mag-tag">Technology</span>
+                                <h4>AI Integration Maximizes Solar Output by 15%</h4>
+                                <span class="mag-date">Oct 08, 2026</span>
+                            </div>
+                        </div>
+                        <div class="mag-card">
+                            <img src="images/battery.webp" alt="Article">
+                            <div class="mag-card-content">
+                                <span class="mag-tag">Innovation</span>
+                                <h4>Breakthrough in Utility-Scale Battery Storage</h4>
+                                <span class="mag-date">Oct 05, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="logo-removebg-preview.webp" alt="STACKLY" class="nav-logo-img" />
+                </a>
+                <p style="color: #ffffff !important;">Engineering intelligent, scalable renewable energy systems for a sustainable tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="404.html">Solar Energy</a></li>
+                    <li><a href="404.html">Wind Turbines</a></li>
+                    <li><a href="404.html">EV Charging</a></li>
+                    <li><a href="404.html">Smart Grid</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p style="color:#ffffff !important;">Subscribe to our newsletter for the latest green tech news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p style="color:#ffffff !important;">&copy; 2026 Stackly. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="404.html">Privacy Policy</a>
+                <a href="404.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

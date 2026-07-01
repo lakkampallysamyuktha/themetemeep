@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ECOPOWER</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+    <!-- Premium Oval Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo-removebg-preview.webp" alt="STACKLY" class="nav-logo-img" />
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="login.html" class="btn btn-login">Login</a>
+                <button class="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="mobile-login-btn">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- 1. Hero Banner -->
+    <section class="shared-hero" style="--bg-image: url('images/biomass.webp');">
+        <i class="fa-solid fa-leaf floating-leaf leaf-1"></i>
+        <i class="fa-solid fa-seedling floating-leaf leaf-2"></i>
+        <i class="fa-solid fa-fan floating-leaf leaf-3"></i>
+        
+        <div class="shared-hero-content">
+            <h1 class="split-text">Smart Renewable Energy Solutions for Every Need</h1>
+            <p class="fade-up" style="transition-delay: 0.2s;">Step into the future of energy. Explore our range of cutting-edge renewable solutions designed to power your infrastructure efficiently and sustainably.</p>
+            <div class="breadcrumbs fade-up" style="transition-delay: 0.3s;">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Services</span>
+            </div>
+        </div>
+
+        <div class="hero-curve">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V120H0Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 2. Interactive Services Showcase -->
+    <section class="horizontal-showcase-section" id="showcase-section">
+        <div class="showcase-sticky-wrapper">
+            <div class="container showcase-header-container">
+                <div class="showcase-header">
+                    <span class="section-eyebrow">CORE SOLUTIONS</span>
+                    <h2 class="section-title">Energy For Tomorrow</h2>
+                </div>
+                
+                <!-- Progress Indicator -->
+                <div class="showcase-progress-wrapper">
+                    <div class="showcase-progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- Horizontal Container -->
+            <div class="horizontal-container-outer">
+                <div class="horizontal-container-inner" id="horizontal-track">
+                    <!-- Service 1: Solar Energy -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/solar.webp" alt="Solar Energy">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">01</span>
+                                <h3>Solar Energy</h3>
+                                <p>Harness the clean, infinite power of the sun. We design and install high-performance photovoltaic systems that maximize energy capture and efficiency.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> High-efficiency PV cells</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Custom rooftop & ground mounts</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Real-time generation monitoring</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> 25-year performance warranty</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Wind Energy -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/wind.webp" alt="Wind Energy">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">02</span>
+                                <h3>Wind Energy</h3>
+                                <p>Capture the kinetic force of wind. Our state-of-the-art turbines are engineered for maximum aerodynamic performance and long-term durability.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Onshore & offshore systems</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Low wind-speed optimization</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Quiet-running rotor blades</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Grid-synchronized output</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Hydropower -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/battery_tech.webp" alt="Energy Storage" class="moving-img">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">03</span>
+                                <h3>Hydropower</h3>
+                                <p>Generate electricity from moving water. Our small-to-mid-scale hydro solutions provide a highly reliable, continuous source of clean baseload power.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Run-of-river installations</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Fish-friendly turbine designs</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Constant energy output</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Minimal environmental footprint</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Biomass Energy -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/biomass.webp" alt="Biomass Energy">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">04</span>
+                                <h3>Biomass Energy</h3>
+                                <p>Convert organic waste into clean power. Our advanced bioenergy systems utilize agricultural and wood residues to produce electricity and heat.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> Carbon-neutral power cycle</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> High-efficiency waste conversion</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Combined Heat & Power (CHP)</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Landfill diversion solutions</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Battery Storage -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/battery.webp" alt="Battery Storage">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">05</span>
+                                <h3>Battery Storage</h3>
+                                <p>Store power for when you need it most. Our intelligent battery systems store excess renewable energy to ensure a continuous, uninterrupted power supply.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> High-density lithium storage</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Fast-charging capabilities</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Peak-shaving load management</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Automatic backup power</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Smart Grid -->
+                    <div class="showcase-card">
+                        <div class="card-inner">
+                            <div class="card-image-wrapper">
+                                <img src="images/smart_grid.webp" alt="Smart Grid">
+                                <div class="image-reveal-overlay"></div>
+                            </div>
+                            <div class="card-text-wrapper">
+                                <span class="card-num">06</span>
+                                <h3>Smart Grid</h3>
+                                <p>Intelligent power distribution networks. We deploy advanced AI-driven grids that dynamically route energy and eliminate distribution waste completely.</p>
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-circle-check"></i> AI-powered load balancing</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Decentralized microgrids</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Real-time grid diagnostics</li>
+                                    <li><i class="fa-solid fa-circle-check"></i> Seamless EV charger integration</li>
+                                </ul>
+                                <a href="404.html" class="btn-card-learn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Our Service Process -->
+    <section class="process-timeline-section">
+        <div class="container">
+            <div class="text-center fade-up" style="margin-bottom: 80px;">
+                <span class="section-eyebrow">OUR METHODOLOGY</span>
+                <h2 class="section-title">How We Integrate</h2>
+            </div>
+            
+            <div class="vertical-timeline-wrapper">
+                <!-- SVG Connecting Line -->
+                <div class="svg-line-container">
+                    <svg class="timeline-svg" viewBox="0 0 100 1000" preserveAspectRatio="none">
+                        <!-- Background dashed path -->
+                        <path class="timeline-path-bg" d="M50,0 L50,1000" stroke="rgba(140,198,63,0.15)" stroke-width="4" fill="none" stroke-dasharray="10, 10"></path>
+                        <!-- Animated colored path -->
+                        <path class="timeline-path-active" id="active-path" d="M50,0 L50,1000" stroke="var(--primary-green)" stroke-width="4" fill="none"></path>
+                    </svg>
+                </div>
+                
+                <div class="timeline-steps-list">
+                    <!-- Step 1: Consultation -->
+                    <div class="timeline-step-item left-align fade-up-step">
+                        <div class="step-content">
+                            <span class="step-num">01</span>
+                            <h3>Consultation</h3>
+                            <p>We begin by discussing your energy needs, current usage patterns, and long-term sustainability goals to formulate a tailored strategy.</p>
+                        </div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
+                        </div>
+                        <div class="step-empty"></div>
+                    </div>
+
+                    <!-- Step 2: Site Assessment -->
+                    <div class="timeline-step-item right-align fade-up-step">
+                        <div class="step-empty"></div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-compass"></i></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-num">02</span>
+                            <h3>Site Assessment</h3>
+                            <p>Our engineering team conducts detailed geospatial and structural audits using drones and solar/wind telemetry to map your potential.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Custom Design -->
+                    <div class="timeline-step-item left-align fade-up-step">
+                        <div class="step-content">
+                            <span class="step-num">03</span>
+                            <h3>Custom Design</h3>
+                            <p>We engineer a bespoke renewable energy system using advanced CAD software, optimizing for output, cost, and structural integration.</p>
+                        </div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+                        </div>
+                        <div class="step-empty"></div>
+                    </div>
+
+                    <!-- Step 4: Installation -->
+                    <div class="timeline-step-item right-align fade-up-step">
+                        <div class="step-empty"></div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-tools"></i></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-num">04</span>
+                            <h3>Installation</h3>
+                            <p>Our certified technicians assemble and deploy your clean energy assets using top-tier components, keeping downtime to a minimum.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Monitoring -->
+                    <div class="timeline-step-item left-align fade-up-step">
+                        <div class="step-content">
+                            <span class="step-num">05</span>
+                            <h3>Monitoring</h3>
+                            <p>We connect your systems to our smart network, initializing real-time AI analytics that track and optimize your energy generation.</p>
+                        </div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-desktop"></i></div>
+                        </div>
+                        <div class="step-empty"></div>
+                    </div>
+
+                    <!-- Step 6: Maintenance -->
+                    <div class="timeline-step-item right-align fade-up-step">
+                        <div class="step-empty"></div>
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-num">06</span>
+                            <h3>Maintenance</h3>
+                            <p>Our team provides regular preventative checkups and 24/7 technical support to guarantee maximum performance and longevity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Our Services -->
+    <section class="why-choose-services-section">
+        <div class="container">
+            <div class="why-grid">
+                <!-- Left Column: Large Image -->
+                <div class="why-left fade-right">
+                    <div class="why-image-wrapper">
+                        <img src="images/wind.webp" alt="Global Expansion" class="moving-img">
+                        <div class="experience-years-badge">
+                            <span class="badge-num">15+</span>
+                            <span class="badge-lbl">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Features -->
+                <div class="why-right fade-left">
+                    <span class="section-eyebrow">WHY CHOOSE US</span>
+                    <h2 class="section-title">Engineering Excellence in Clean Energy</h2>
+                    
+                    <div class="why-features-list">
+                        <!-- Feature 1 -->
+                        <div class="why-feature-card">
+                            <div class="feat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                            <div class="feat-info">
+                                <h3>Certified Experts</h3>
+                                <p>Our highly trained engineers carry industry-leading credentials and extensive field experience.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 2 -->
+                        <div class="why-feature-card">
+                            <div class="feat-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div class="feat-info">
+                                <h3>Sustainable Technology</h3>
+                                <p>We deploy advanced, environmentally conscious hardware engineered for a net-zero lifecycle.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 3 -->
+                        <div class="why-feature-card">
+                            <div class="feat-icon"><i class="fa-solid fa-wallet"></i></div>
+                            <div class="feat-info">
+                                <h3>Energy Cost Savings</h3>
+                                <p>Significantly lower your operational overhead and hedge against fluctuating utility rates.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 4 -->
+                        <div class="why-feature-card">
+                            <div class="feat-icon"><i class="fa-solid fa-headset"></i></div>
+                            <div class="feat-info">
+                                <h3>24/7 Support</h3>
+                                <p>Our control center monitors your energy assets around the clock, resolving issues instantly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="why-stats-row fade-up">
+                <!-- Stat 1 -->
+                <div class="why-stat-box">
+                    <div class="stat-num-container">
+                        <h3 class="counter" data-target="500">0</h3>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <p>Projects Completed</p>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="why-stat-box">
+                    <div class="stat-num-container">
+                        <h3 class="counter" data-target="98">0</h3>
+                        <span class="stat-plus">%</span>
+                    </div>
+                    <p>Client Satisfaction</p>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="why-stat-box">
+                    <div class="stat-num-container">
+                        <h3 class="counter" data-target="25">0</h3>
+                        <span class="stat-plus">MW+</span>
+                    </div>
+                    <p>Clean Energy Generated</p>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="why-stat-box">
+                    <div class="stat-num-container">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Call to Action -->
+    <section class="services-cta-section">
+        <!-- Floating organic shapes -->
+        <div class="cta-shape shape-1"></div>
+        <div class="cta-shape shape-2"></div>
+        
+        <div class="container position-relative z-index-2 fade-up">
+            <span class="cta-label">START TODAY</span>
+            <h2 class="cta-title">Let's Build a Greener Future Together</h2>
+            <p class="cta-desc">Join the renewable revolution today. Get in touch with our expert engineering team for a free consultation and customized energy assessment.</p>
+            
+            <div class="cta-buttons">
+                <a href="404.html" class="btn btn-primary">Get Free Consultation</a>
+                <a href="404.html" class="btn-outline-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="footer-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="logo-removebg-preview.webp" alt="STACKLY" class="nav-logo-img" />
+                </a>
+                <p style="color: #ffffff !important;">Engineering intelligent, scalable renewable energy systems for a sustainable tomorrow.</p>
+                <div class="footer-socials">
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="404.html" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="404.html">Solar Energy</a></li>
+                    <li><a href="404.html">Wind Turbines</a></li>
+                    <li><a href="404.html">EV Charging</a></li>
+                    <li><a href="404.html">Smart Grid</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p style="color:#ffffff !important;">Subscribe to our newsletter for the latest green tech news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p style="color:#ffffff !important;">&copy; 2026 Stackly. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="404.html">Privacy Policy</a>
+                <a href="404.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
