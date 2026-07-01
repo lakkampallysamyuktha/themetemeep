@@ -217,6 +217,7 @@ ul {
     cursor: pointer;
     transition: var(--transition);
     border: 2px solid transparent;
+    gap: 8px;
 }
 
 .btn-primary {
